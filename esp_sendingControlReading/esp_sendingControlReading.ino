@@ -20,7 +20,7 @@ void loop() {
     int yIndex = data.indexOf("Y=") + 2;
     int yValue = data.substring(yIndex, data.indexOf('\t', yIndex)).toInt();
     // Map Y value from 0-1023 to 0-180
-    int mappedYValue = map(yValue, 0, 1023, 0, 180);
+    int mappedYValue = map(yValue, 0, 1023, 20, 150);
 
     // Extract Slider value
     int sliderIndex = data.indexOf("S=") + 2;
